@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Search</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Player Search</h1>
+    
+    <div id="main-container">
+        <div id="searchForm" class="form-container">
+            <form>
+                
+                <input type="text" id="playerInput" name="playerInput" required>
+                <button type="button" onclick="searchPlayer()">Search</button>
+            </form>
+        </div>
+
+        <div id="player-info" class="info-container">
+            <div id="photo-container">
+                <div id="name"></div>
+                <div id="photo"></div>
+            </div>
+            <div class="info-details">
+                <div id="age"></div>
+                <div id="flag"></div>
+                <div id="position"></div>
+                <div id="shirtNumber"></div>
+                <div id="preferredFoot"></div>
+                <div id="AtTeam"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        });
+    </script>
+</body>
+</html>       
