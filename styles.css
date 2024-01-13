@@ -1,3 +1,8 @@
+html {
+    height: 100%;
+    background: linear-gradient(to bottom, #000, #c0c0c0, #000);
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,11 +12,16 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url('fundopp.jpg'); /* Substitua 'nome-da-sua-imagem.jpg' pelo nome do seu arquivo de imagem */
-    background-size: cover; /* Ajuste conforme necessário */
-    background-position: center; /* Ajuste conforme necessário */
-    color: #000; /* Define a cor do texto para branco para garantir legibilidade */
+    background-image: url('fundopp2.jpg');
+    background-size: 420px 626px; /* Define o tamanho específico da imagem de fundo */
+    background-position: center;
+    background-attachment: fixed; /* Torna a imagem de fundo fixa */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    color: #000;
 }
+
+
+
 
 h1 {
     font-size: 60px;
@@ -58,6 +68,9 @@ button:hover {
     flex-direction: row;
     align-items: center;
     text-align: center;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 10px;
 }
 
 #photo-container {
@@ -66,17 +79,16 @@ button:hover {
 }
 
 #photo {
-    margin-right: 150px;
-    width: 100px; /* ajuste conforme necessário */
-    height: 100px; /* ajuste conforme necessário */
+    width: 100%; /* ajuste conforme necessário */
+    height: 100%; /* ajuste conforme necessário */
 }
 
 #name {
     position: absolute;
-    bottom: 100px;
-    right: 50px;
+    bottom: 150px;
     width: 100%;
     text-align: center;
+    font-size: 16px;
 }
 
 .info-details {
