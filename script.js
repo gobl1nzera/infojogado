@@ -25,13 +25,14 @@ function searchPlayer() {
 
                 document.getElementById('name').innerHTML = `<h2>${firstPlayer.name}</h2>`;
                 document.getElementById('photo').innerHTML = `<img src="${firstPlayer.photo}" alt="Player Photo">`;
-                document.getElementById('age').innerHTML = `<p>Age: ${firstPlayer.age}</p>`;
+                document.getElementById('age').innerHTML = `<p><strong>Age:</strong> ${firstPlayer.age}</p>`;
                 const flagUpperCase = firstPlayer.flag.toUpperCase();
-                document.getElementById('flag').innerHTML = `<p>${flagUpperCase}</p>`;
-
-                document.getElementById('position').innerHTML = `<p>Position: ${firstPlayer.position_name}</p>`;
-                document.getElementById('shirtNumber').innerHTML = `<p>Shirt Number: ${firstPlayer.shirt_number}</p>`;
-                document.getElementById('preferredFoot').innerHTML = `<p>Preferred Foot: ${firstPlayer.preferred_foot}`;
+                document.getElementById('flag').innerHTML = `<p><strong>Flag:</strong> ${flagUpperCase}</p>`;
+                
+                document.getElementById('position').innerHTML = `<p><strong>Position:</strong> ${firstPlayer.position_name}</p>`;
+                document.getElementById('shirtNumber').innerHTML = `<p><strong>Shirt Number:</strong> ${firstPlayer.shirt_number}</p>`;
+                document.getElementById('preferredFoot').innerHTML = `<p><strong>Preferred Foot:</strong> ${firstPlayer.preferred_foot}</p>`;
+                
             } else {
                 console.log('Data not found in the response.');
             }
